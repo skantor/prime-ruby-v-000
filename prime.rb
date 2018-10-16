@@ -3,7 +3,7 @@ def prime?(num)
   final = false
   if num <= 1 || (num.even? == true && num != 2)
     final = false
-  elsif num == 2
+  elsif num == 2 || num ==3
     final = true 
   else 
     collection = []
