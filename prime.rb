@@ -10,12 +10,12 @@ def prime?(num)
     l = (2..(num-1)).to_a
     l.each do |div|
       if num%div==0
-        collection << true
+        collection << false
       else 
         collection << true 
       end
     end 
-    final = collection.any?{|item| item == false}
+    final = !collection.any?{|item| item == false}
   end
   final
 end 
