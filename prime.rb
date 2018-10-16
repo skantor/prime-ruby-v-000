@@ -6,7 +6,7 @@ def prime?(num)
   elsif num == 2
     final = true 
   elsif num.even? == true && num != 2
-    false 
+    final = false 
   else 
     collection = []
     l = (2..(num-1)).to_a
