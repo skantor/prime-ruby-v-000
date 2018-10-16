@@ -15,7 +15,7 @@ def prime?(num)
         collection << true 
       end
     end 
-    final = collection.any?(false)
+    final = collection.any?{|item| item == false}
   end
   final
 end 
