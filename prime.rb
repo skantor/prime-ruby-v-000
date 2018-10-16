@@ -10,7 +10,7 @@ def prime?(num)
     l = (2..(num-1)).to_a
     l.each do |div|
       if num%div==0
-        collection << false 
+        collection << true
       else 
         collection << true 
       end
